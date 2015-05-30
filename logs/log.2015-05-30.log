@@ -1,0 +1,50 @@
+2015-05-30 07:13:01,791 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2015-05-30 07:13:01,805 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+2015-05-30 07:13:01,811 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - Default Loggers started
+2015-05-30 07:13:01,869 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-2] INFO  akka.remote.Remoting - Starting remoting
+2015-05-30 07:13:02,099 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] INFO  akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://com-wesovi-demo-route-AccountCreationRouteSpec@127.0.0.1:65131]
+2015-05-30 07:13:02,102 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] INFO  akka.remote.Remoting - Remoting now listens on addresses: [akka.tcp://com-wesovi-demo-route-AccountCreationRouteSpec@127.0.0.1:65131]
+2015-05-30 07:13:02,232 [AccountSystem-1-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2015-05-30 07:13:02,233 [AccountSystem-1-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+2015-05-30 07:13:02,234 [AccountSystem-1-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - Default Loggers started
+2015-05-30 07:13:02,238 [AccountSystem-1-akka.actor.default-dispatcher-2] INFO  akka.remote.Remoting - Starting remoting
+2015-05-30 07:13:02,245 [AccountSystem-1-akka.actor.default-dispatcher-2] INFO  akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://AccountSystem-1@127.0.0.1:65132]
+2015-05-30 07:13:02,246 [AccountSystem-1-akka.actor.default-dispatcher-2] INFO  akka.remote.Remoting - Remoting now listens on addresses: [akka.tcp://AccountSystem-1@127.0.0.1:65132]
+2015-05-30 07:13:03,445 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-2] INFO  c.wesovi.demo.service.AccountService - Account with email noValid_com and password P4ssw0rd!
+2015-05-30 07:13:03,739 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+2015-05-30 07:13:03,741 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+2015-05-30 07:13:03,781 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting - Remoting shut down
+2015-05-30 07:13:03,781 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remoting shut down.
+2015-05-30 07:13:03,784 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] DEBUG akka.event.EventStream - shutting down: StandardOutLogger started
+2015-05-30 07:13:03,826 [AccountSystem-1-akka.actor.default-dispatcher-2] DEBUG akka.remote.EndpointWriter - AssociationError [akka.tcp://AccountSystem-1@127.0.0.1:65132] -> [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]: Error [Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]] [
+akka.remote.EndpointAssociationException: Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]
+Caused by: akka.remote.transport.netty.NettyTransport$$anonfun$associate$1$$anon$2: Connection refused: /127.0.0.1:20001
+]
+2015-05-30 07:13:03,832 [AccountSystem-1-akka.actor.default-dispatcher-2] WARN  a.remote.ReliableDeliverySupervisor - Association with remote system [akka.tcp://AccountRemoteSystem@127.0.0.1:20001] has failed, address is now gated for [5000] ms. Reason: [Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]] Caused by: [Connection refused: /127.0.0.1:20001]
+2015-05-30 07:13:03,837 [AccountSystem-1-akka.actor.default-dispatcher-2] INFO  a.r.RemoteActorRefProvider$RemoteDeadLetterActorRef - Message [com.wesovi.demo.exchange.AccountExchange] from Actor[akka://com-wesovi-demo-route-AccountCreationRouteSpec/user/$a#-992241027] to Actor[akka://AccountSystem-1/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2015-05-30 07:13:03,838 [AccountSystem-1-akka.actor.default-dispatcher-2] DEBUG akka.remote.EndpointWriter - Disassociated [akka.tcp://AccountSystem-1@127.0.0.1:65132] -> [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]
+2015-05-30 08:00:11,322 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2015-05-30 08:00:11,332 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+2015-05-30 08:00:11,336 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - Default Loggers started
+2015-05-30 08:00:11,371 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] INFO  akka.remote.Remoting - Starting remoting
+2015-05-30 08:00:11,536 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] INFO  akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://com-wesovi-demo-route-AccountCreationRouteSpec@127.0.0.1:49246]
+2015-05-30 08:00:11,538 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] INFO  akka.remote.Remoting - Remoting now listens on addresses: [akka.tcp://com-wesovi-demo-route-AccountCreationRouteSpec@127.0.0.1:49246]
+2015-05-30 08:00:11,637 [AccountSystem-1-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2015-05-30 08:00:11,639 [AccountSystem-1-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+2015-05-30 08:00:11,640 [AccountSystem-1-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - Default Loggers started
+2015-05-30 08:00:11,642 [AccountSystem-1-akka.actor.default-dispatcher-5] INFO  akka.remote.Remoting - Starting remoting
+2015-05-30 08:00:11,648 [AccountSystem-1-akka.actor.default-dispatcher-5] INFO  akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://AccountSystem-1@127.0.0.1:49247]
+2015-05-30 08:00:11,649 [AccountSystem-1-akka.actor.default-dispatcher-5] INFO  akka.remote.Remoting - Remoting now listens on addresses: [akka.tcp://AccountSystem-1@127.0.0.1:49247]
+2015-05-30 08:00:12,213 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-3] INFO  c.wesovi.demo.service.AccountService - Account with email noValid_com and password P4ssw0rd!
+2015-05-30 08:00:12,363 [AccountSystem-1-akka.actor.default-dispatcher-2] DEBUG akka.remote.EndpointWriter - AssociationError [akka.tcp://AccountSystem-1@127.0.0.1:49247] -> [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]: Error [Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]] [
+akka.remote.EndpointAssociationException: Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]
+Caused by: akka.remote.transport.netty.NettyTransport$$anonfun$associate$1$$anon$2: Connection refused: /127.0.0.1:20001
+]
+2015-05-30 08:00:12,373 [AccountSystem-1-akka.actor.default-dispatcher-2] WARN  a.remote.ReliableDeliverySupervisor - Association with remote system [akka.tcp://AccountRemoteSystem@127.0.0.1:20001] has failed, address is now gated for [5000] ms. Reason: [Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]] Caused by: [Connection refused: /127.0.0.1:20001]
+2015-05-30 08:00:12,381 [AccountSystem-1-akka.actor.default-dispatcher-5] INFO  a.r.RemoteActorRefProvider$RemoteDeadLetterActorRef - Message [com.wesovi.demo.exchange.AccountExchange] from Actor[akka://com-wesovi-demo-route-AccountCreationRouteSpec/user/$a#-999555709] to Actor[akka://AccountSystem-1/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2015-05-30 08:00:12,384 [AccountSystem-1-akka.actor.default-dispatcher-5] DEBUG akka.remote.EndpointWriter - Disassociated [akka.tcp://AccountSystem-1@127.0.0.1:49247] -> [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]
+2015-05-30 08:00:12,812 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+2015-05-30 08:00:12,813 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+2015-05-30 08:00:12,842 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting - Remoting shut down
+2015-05-30 08:00:12,843 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remoting shut down.
+2015-05-30 08:00:12,844 [com-wesovi-demo-route-AccountCreationRouteSpec-akka.actor.default-dispatcher-4] DEBUG akka.event.EventStream - shutting down: StandardOutLogger started

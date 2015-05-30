@@ -1,0 +1,78 @@
+2015-05-27 12:19:09,225 [microservice-system-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2015-05-27 12:19:09,237 [microservice-system-akka.actor.default-dispatcher-4] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+2015-05-27 12:19:09,243 [microservice-system-akka.actor.default-dispatcher-4] DEBUG akka.event.EventStream - Default Loggers started
+2015-05-27 12:19:09,280 [microservice-system-akka.actor.default-dispatcher-2] INFO  akka.remote.Remoting - Starting remoting
+2015-05-27 12:19:09,444 [microservice-system-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://microservice-system@127.0.0.1:54865]
+2015-05-27 12:19:09,446 [microservice-system-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting - Remoting now listens on addresses: [akka.tcp://microservice-system@127.0.0.1:54865]
+2015-05-27 12:19:09,469 [AccountSystem-1-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+2015-05-27 12:19:09,471 [AccountSystem-1-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+2015-05-27 12:19:09,471 [AccountSystem-1-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - Default Loggers started
+2015-05-27 12:19:09,475 [AccountSystem-1-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting - Starting remoting
+2015-05-27 12:19:09,482 [AccountSystem-1-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://AccountSystem-1@127.0.0.1:54436]
+2015-05-27 12:19:09,483 [AccountSystem-1-akka.actor.default-dispatcher-4] INFO  akka.remote.Remoting - Remoting now listens on addresses: [akka.tcp://AccountSystem-1@127.0.0.1:54436]
+2015-05-27 12:19:09,894 [microservice-system-akka.actor.default-dispatcher-14] DEBUG spray.can.server.HttpListener - Binding to localhost/127.0.0.1:8878
+2015-05-27 12:19:09,926 [microservice-system-akka.actor.default-dispatcher-3] DEBUG akka.io.TcpListener - Successfully bound to /127.0.0.1:8878
+2015-05-27 12:19:09,927 [microservice-system-akka.actor.default-dispatcher-2] INFO  spray.can.server.HttpListener - Bound to localhost/127.0.0.1:8878
+2015-05-27 12:19:55,847 [microservice-system-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:19:55,893 [microservice-system-akka.actor.default-dispatcher-3] DEBUG s.can.server.HttpServerConnection - Dispatching GET request to http://localhost:8878/api/accounts to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/1#2096875074]
+2015-05-27 12:19:55,958 [microservice-system-akka.actor.default-dispatcher-16] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:19:55,959 [microservice-system-akka.actor.default-dispatcher-16] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:20:07,648 [microservice-system-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:20:07,652 [microservice-system-akka.actor.default-dispatcher-3] DEBUG s.can.server.HttpServerConnection - Dispatching POST request to http://localhost:8878/api/accounts to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/2#146656467]
+2015-05-27 12:20:07,655 [microservice-system-akka.actor.default-dispatcher-4] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:20:07,656 [microservice-system-akka.actor.default-dispatcher-4] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:21:17,448 [microservice-system-akka.actor.default-dispatcher-3] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:21:17,455 [microservice-system-akka.actor.default-dispatcher-16] DEBUG s.can.server.HttpServerConnection - Dispatching POST request to http://localhost:8878/api/accounts to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/3#-715674173]
+2015-05-27 12:21:17,458 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:21:17,459 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:21:36,651 [microservice-system-akka.actor.default-dispatcher-3] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:21:36,655 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - Dispatching POST request to http://localhost:8878/api/accounts to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/4#1400252687]
+2015-05-27 12:21:36,658 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:21:36,658 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:21:40,637 [microservice-system-akka.actor.default-dispatcher-3] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:21:40,640 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - Dispatching POST request to http://localhost:8878/api/accounts to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/5#1387921691]
+2015-05-27 12:21:40,641 [microservice-system-akka.actor.default-dispatcher-17] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:21:40,642 [microservice-system-akka.actor.default-dispatcher-17] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:21:54,242 [microservice-system-akka.actor.default-dispatcher-3] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:21:54,244 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - Dispatching POST request to http://localhost:8878/api/accounts to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/6#689333868]
+2015-05-27 12:21:54,247 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:21:54,247 [microservice-system-akka.actor.default-dispatcher-2] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:22:22,089 [microservice-system-akka.actor.default-dispatcher-17] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:22:22,092 [microservice-system-akka.actor.default-dispatcher-17] DEBUG s.can.server.HttpServerConnection - Dispatching POST request to http://localhost:8878/api/account to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/7#1460947018]
+2015-05-27 12:22:22,104 [microservice-system-akka.actor.default-dispatcher-16] INFO  c.wesovi.demo.service.AccountService - Account with email ba_ and password 12345678!
+2015-05-27 12:22:22,125 [microservice-system-akka.actor.default-dispatcher-17] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:22:22,126 [microservice-system-akka.actor.default-dispatcher-17] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:22:22,156 [AccountSystem-1-akka.actor.default-dispatcher-3] DEBUG akka.remote.EndpointWriter - AssociationError [akka.tcp://AccountSystem-1@127.0.0.1:54436] -> [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]: Error [Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]] [
+akka.remote.EndpointAssociationException: Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]
+Caused by: akka.remote.transport.netty.NettyTransport$$anonfun$associate$1$$anon$2: Connection refused: /127.0.0.1:20001
+]
+2015-05-27 12:22:22,160 [AccountSystem-1-akka.actor.default-dispatcher-3] WARN  a.remote.ReliableDeliverySupervisor - Association with remote system [akka.tcp://AccountRemoteSystem@127.0.0.1:20001] has failed, address is now gated for [5000] ms. Reason: [Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]] Caused by: [Connection refused: /127.0.0.1:20001]
+2015-05-27 12:22:22,163 [AccountSystem-1-akka.actor.default-dispatcher-3] INFO  a.r.RemoteActorRefProvider$RemoteDeadLetterActorRef - Message [com.wesovi.demo.exchange.AccountExchange] from Actor[akka://microservice-system/user/$a#-1694008424] to Actor[akka://AccountSystem-1/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2015-05-27 12:22:22,164 [AccountSystem-1-akka.actor.default-dispatcher-3] DEBUG akka.remote.EndpointWriter - Disassociated [akka.tcp://AccountSystem-1@127.0.0.1:54436] -> [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]
+2015-05-27 12:22:28,789 [microservice-system-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:22:28,791 [microservice-system-akka.actor.default-dispatcher-3] DEBUG s.can.server.HttpServerConnection - Dispatching POST request to http://localhost:8878/api/account to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/8#-621732302]
+2015-05-27 12:22:28,792 [microservice-system-akka.actor.default-dispatcher-2] INFO  c.wesovi.demo.service.AccountService - Account with email ba_ and password 12345678!
+2015-05-27 12:22:28,794 [microservice-system-akka.actor.default-dispatcher-16] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:22:28,794 [microservice-system-akka.actor.default-dispatcher-16] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:22:28,795 [AccountSystem-1-akka.actor.default-dispatcher-3] DEBUG akka.remote.EndpointWriter - AssociationError [akka.tcp://AccountSystem-1@127.0.0.1:54436] -> [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]: Error [Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]] [
+akka.remote.EndpointAssociationException: Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]
+Caused by: akka.remote.transport.netty.NettyTransport$$anonfun$associate$1$$anon$2: Connection refused: /127.0.0.1:20001
+]
+2015-05-27 12:22:28,795 [AccountSystem-1-akka.actor.default-dispatcher-3] WARN  a.remote.ReliableDeliverySupervisor - Association with remote system [akka.tcp://AccountRemoteSystem@127.0.0.1:20001] has failed, address is now gated for [5000] ms. Reason: [Association failed with [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]] Caused by: [Connection refused: /127.0.0.1:20001]
+2015-05-27 12:22:28,795 [AccountSystem-1-akka.actor.default-dispatcher-3] DEBUG akka.remote.EndpointWriter - Disassociated [akka.tcp://AccountSystem-1@127.0.0.1:54436] -> [akka.tcp://AccountRemoteSystem@127.0.0.1:20001]
+2015-05-27 12:22:28,795 [AccountSystem-1-akka.actor.default-dispatcher-3] INFO  a.r.RemoteActorRefProvider$RemoteDeadLetterActorRef - Message [com.wesovi.demo.exchange.AccountExchange] from Actor[akka://microservice-system/user/$a#-1694008424] to Actor[akka://AccountSystem-1/deadLetters] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2015-05-27 12:37:02,095 [microservice-system-akka.actor.default-dispatcher-19] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:37:02,097 [microservice-system-akka.actor.default-dispatcher-3] WARN  s.can.server.HttpServerConnection - Illegal request, responding with status '501 Not Implemented': Unsupported HTTP method
+2015-05-27 12:37:02,100 [microservice-system-akka.actor.default-dispatcher-3] DEBUG s.can.server.HttpServerConnection - Connection was ConfirmedClosed, awaiting TcpConnection termination...
+2015-05-27 12:37:02,100 [microservice-system-akka.actor.default-dispatcher-3] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 12:37:09,533 [microservice-system-akka.actor.default-dispatcher-20] DEBUG akka.io.TcpListener - New connection accepted
+2015-05-27 12:37:09,540 [microservice-system-akka.actor.default-dispatcher-23] DEBUG s.can.server.HttpServerConnection - Dispatching GET request to http://localhost:8878/api/account/status to handler Actor[akka://microservice-system/system/IO-TCP/selectors/$a/10#1855115775]
+2015-05-27 12:37:09,543 [microservice-system-akka.actor.default-dispatcher-21] DEBUG s.can.server.HttpServerConnection - Connection was PeerClosed, awaiting TcpConnection termination...
+2015-05-27 12:37:09,544 [microservice-system-akka.actor.default-dispatcher-21] DEBUG s.can.server.HttpServerConnection - TcpConnection terminated, stopping
+2015-05-27 17:01:22,581 [microservice-system-akka.actor.default-dispatcher-25] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://microservice-system/user/IO-HTTP/listener-0#1977304812]] terminated
+2015-05-27 17:01:22,582 [microservice-system-akka.actor.default-dispatcher-25] DEBUG akka.io.TcpListener - Closing serverSocketChannel after being stopped
+2015-05-27 17:01:22,597 [microservice-system-akka.actor.default-dispatcher-27] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+2015-05-27 17:01:22,598 [microservice-system-akka.actor.default-dispatcher-27] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+2015-05-27 17:01:22,617 [microservice-system-akka.actor.default-dispatcher-27] INFO  akka.remote.Remoting - Remoting shut down
+2015-05-27 17:01:22,617 [microservice-system-akka.actor.default-dispatcher-27] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remoting shut down.
+2015-05-27 17:01:22,619 [microservice-system-akka.actor.default-dispatcher-27] DEBUG akka.event.EventStream - shutting down: StandardOutLogger started

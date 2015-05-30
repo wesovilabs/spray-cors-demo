@@ -1,0 +1,3 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/Ivan/Development/Sandboxes/wesovi/scala-spray-cors/rest-api/src/main/resources/application.conf,/Users/Ivan/Development/Sandboxes/wesovi/scala-spray-cors/rest-api/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Ivan/Development/Sandboxes/wesovi/scala-spray-cors/rest-api/src/main/resources/logback.xml,/Users/Ivan/Development/Sandboxes/wesovi/scala-spray-cors/rest-api/target/scala-2.11/classes/logback.xml)[0m
