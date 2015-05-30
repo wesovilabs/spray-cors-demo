@@ -1,6 +1,6 @@
 ## Synopsis
 
-This project explain how to implement a REST API with Spray that has CORS support
+This project explains how to implement a REST API with Spray that has CORS support
 
 ## Assumptions
 
@@ -10,7 +10,7 @@ Akka, SBT, CORS, Spray, cURL, Scala, Git
 
 ## Requisites
 
-This post is oriented to these people who have experience working with Scala and are starting to work with Spray for REST API implementations.
+This post is oriented to these people who have experience working with Scala and are starting to do it with Spray for REST API implementations.
 
 ## Motivation
 
@@ -25,6 +25,49 @@ The repository contains a couple of branches:
 * **no-cors**: Obviously this branch does not have CORS support
 
 * **cors**: This one contains CORS support.
+
+
+## Implementing CORS directive
+
+The below pieces of code show us how to implements a new directive and have use of it in our rest API. 
+The below code can be found in **com.wesovi.demo.api.Api.scala**
+
+ 
+
+*  **Declaring a new directive**:
+		
+		
+		trait CORSSupport extends Directives {
+		  private val CORSHeaders = List(
+		    `Access-Control-Allow-Methods`(GET, POST, PUT, DELETE, OPTIONS),
+		    `Access-Control-Allow-Headers`("Origin, X-Requested-With, Content-Type, Accept, Accept-Encoding, Accept-Language, Host, Referer, User-Agent"),
+		    `Access-Control-Allow-Credentials`(true)
+		  )
+		
+		  def respondWithCORS(origin: String)(routes: => Route) = {
+		    val originHeader = `Access-Control-Allow-Origin`(SomeOrigins(Seq(HttpOrigin(origin))))
+		    respondWithHeaders(originHeader :: CORSHeaders) {
+		      routes ~ options { complete(StatusCodes.OK) }
+		    }
+		  }
+		}
+
+
+* **Making use of the new directive**
+
+		trait Api extends Directives with RouteConcatenation with CORSSupport with ConfigHolder{
+		  this: CoreActors with Core => 
+		
+		  val routes =
+		    respondWithCORS(config.getString("origin.domain")) {
+		    
+		      pathPrefix("api") { 
+		        new DemoRoute().route
+		      } 
+		    }
+		  
+		  val rootService = system.actorOf(ApiService.props(config.getString("hostname"), config.getInt("port"), routes))
+		}
 
 
 ## Tests - No CORS support
