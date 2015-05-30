@@ -22,22 +22,33 @@ This post is oriented to these people who have experience working with Scala and
 
 The repository contains a couple of branches:
 
-* no-cors: Obviously this branch does not have CORS support
+* **no-cors**: Obviously this branch does not have CORS support
 
-* cors: This onw contains CORS support.
+* **cors**: This onw contains CORS support.
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
+First of all we test the no-cors branch.
+
+Then after clonning the repository to your working environment run the below steps:
+
+* **checkout noo-branch**
+
+* **sbt compile run** : You will running the spray-can server
+
+* **Run curl command** : We will simulate a CORS request with the below command,
+
+		curl \
+		--verbose \
+		--header 'Origin: http://localhost:9292' \
+		--request OPTIONS \
+		--header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
+		--header 'Access-Control-Request-Method: GET' \
+		--header 'Access-Control-Max-Age: 0' \
+		--header 'Set-Cookie: test=test' \
+		http://localhost:8878/api/demo/status  
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+* Iván Corrales Solera (@wesovi)  (https://twitter.com/wesovi) (developer@wesovi.com)
