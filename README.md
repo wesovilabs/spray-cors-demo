@@ -52,6 +52,30 @@ Then after clonning the repository to your working environment run the below ste
 		--header 'Access-Control-Max-Age: 0' \
 		--header 'Set-Cookie: test=test' \
 		http://localhost:8878/api/demo/status  
+		
+*  **The server response**
+		
+		* Hostname was NOT found in DNS cache
+		*   Trying 127.0.0.1...
+		* Connected to localhost (127.0.0.1) port 8878 (#0)
+		> OPTIONS /api/demo/status HTTP/1.1
+		> User-Agent: curl/7.37.1
+		> Host: localhost:8878
+		> Accept: */*
+		> Origin: http://localhost:9292
+		> Access-Control-Request-Headers: Origin, Accept, Content-Type
+		> Access-Control-Request-Method: GET
+		> Access-Control-Max-Age: 0
+		> Set-Cookie: test=test
+		>
+		< HTTP/1.1 405 Method Not Allowed
+		* Server spray-can/1.3.3 is not blacklisted
+		< Server: spray-can/1.3.3
+		< Date: Sat, 30 May 2015 07:01:44 GMT
+		< Allow: GET
+		< Content-Type: text/plain; charset=UTF-8
+		< Content-Length: 47
+		<
 
 ## Contributors
 
