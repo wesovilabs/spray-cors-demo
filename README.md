@@ -1,18 +1,30 @@
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This project explain how to implement a REST API with Spray that has CORS support
 
-## Code Example
+## Assumptions
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+I assume you have experience and your working environment ready to work with the below technologies/frameworks:
+
+Akka, SBT, CORS, Spray, cURL, Scala, Git
+
+## Requisites
+
+This post is oriented to these people who have experience working with Scala and are starting to work with Spray for REST API implementations.
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+* Learning to declare your own Spray directives
+
+* Developing Rest API's that have CORS support
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+The repository contains a couple of branches:
+
+* no-cors: Obviously this branch does not have CORS support
+
+* cors: This onw contains CORS support.
 
 ## API Reference
 
