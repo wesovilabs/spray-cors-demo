@@ -33,9 +33,13 @@ First of all we test the no-cors branch.
 
 Then after clonning the repository to your working environment run the below steps:
 
-* **checkout noo-branch**
+* **checkout branch**
 
-* **sbt compile run** : You will running the spray-can server
+		checkout no-cors 
+
+* **Run spray-can server**:
+
+		sbt compile run
 
 * **Run curl command** : We will simulate a CORS request with the below command,
 
